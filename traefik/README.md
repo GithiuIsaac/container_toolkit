@@ -1,6 +1,6 @@
 helm repo add traefik https://helm.traefik.io/traefik  
-helm repo update
-kubectl create ns traefik-v2
+helm repo update  
+kubectl create ns traefik-v2  
 helm install --namespace=traefik-v2 traefik traefik/traefik
 
 # Use this to access the dashboard. If on a remote host, just ssh port forward to your local machine
